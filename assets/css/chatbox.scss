@@ -1,0 +1,393 @@
+
+@media (max-width:600px) {
+
+.chatbox {
+	display:none;
+	flex-direction:column;
+	background-color:$chat-bg;
+	width:100%;
+	height:90vh;
+}
+
+#viewVidBtn {
+	display:inline-block;
+	margin:20px;
+}
+
+#dash-chat-menu-btn {
+	display:none;
+}
+
+#sendMsgBtn {
+	display:none;
+}
+
+#chatbox-msg-textarea {
+	display:none;
+}
+
+#dash-chat-btn-box {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-bottom:5px;	
+}
+
+}
+
+@media (min-width:900px) {
+
+.chatbox {
+	display:flex;
+	flex-direction:column;
+	background-color:$chat-bg;
+	height:90vh;
+	width:30%;
+}
+
+#viewVidBtn {
+	display:none;
+}
+
+#dash-chat-btn-box {
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	margin-bottom:5px;	
+}
+
+}
+
+@media (min-width:600px) and (max-width:900px) {
+
+.chatbox {
+	display:none;
+	flex-direction:column;
+	background-color:$chat-bg;
+	height:90vh;
+	width:30%;
+}	
+
+}
+
+
+
+.chatbox-header {
+	font-family:$helshitica;
+	background-color:$chat-bg;
+	border-bottom:1px solid lightgray;
+	text-align:center;
+	padding:5px;
+}
+
+.chatbox-msg-box {
+	height:100%;
+	margin:0px;
+	overflow:auto;
+}
+
+.chatbox-form-box {
+	border-top:1px solid lightgray;
+	background-color:$chat-bg;;
+}
+
+#chatbox-send-coins-box {
+	display:none;
+}
+
+#chatbox-send-chat-box {
+}
+
+#chatbox-banned-msg {
+	display:none;
+	font-family:$helshitica;
+	background-color:$primary-red;
+	color:white;
+	padding:5px;
+	text-align:center;
+}
+
+#chatbox-ul {
+	margin:0px;
+	padding:5px;
+	font-family:$helshitica;
+}
+
+.chatbox-li-item {
+	background-color: $chat-bg;
+	border:0px;
+	padding:2px;
+	list-style:none;
+}
+
+.chatbox-disconnect-msg {
+	color:red;
+}
+
+.chatbox-connect-msg {
+	color:green;
+}
+
+#chatbox-connect-btn {
+	display:none;
+	padding:10px;
+}
+
+#chatbox-msg-textarea {
+	resize:none;
+}
+
+#chat-send-coin-btns-box {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-bottom:5px;
+}
+
+.chat-send-tip-btn-box {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-bottom:5px;
+	font-family:$helshitica;
+	font-size:20px;	
+}
+
+#sendCoinBtn {
+	width:100px;
+	margin-left:10px;
+}
+
+#sendTipBtn {
+	width:100px;
+	margin-right:10px;
+}
+
+.chat-send-coin-img {
+	width:25px;
+	height:25px;
+}
+
+#sendMsgBtn {
+	width:100px;
+	margin-right:10px;
+}
+
+
+.chat-send-coin-btn {
+	border: 1px solid #b8babc;
+	background-color:#e0e2e5;
+	font-family:$helshitica;
+	padding:10px;
+	text-align:center;
+	border-radius:5px;
+	font-size:16px;
+	color:black;
+	width:100%;
+	margin-top:10px;
+	white-space: normal;
+	box-sizing:border-box;
+	transition: background-color 0.5s ease;
+	text-decoration: none;
+}
+
+.chat-send-coin-btn:hover {
+  background-color:#b8babc;
+}
+
+.chat-send-coin-btn-span {
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content: space-around;
+}
+
+.chat-coin-conf-btn {
+	border: 1px solid #b8babc;
+	background-color:#e0e2e5;
+	font-family:$helshitica;
+	padding:10px;
+	text-align:center;
+	border-radius:5px;
+	font-size:16px;
+	color:black;
+	width:100%;
+	margin-top:10px;
+	white-space: normal;
+	box-sizing:border-box;
+	transition: background-color 0.5s ease;
+	text-decoration: none;
+}
+
+.chat-coin-conf-btn:hover {
+	border:1px solid #17d65c;
+	background-color: #17d65c;
+	color:white;
+}
+
+
+#backToChatBtn {
+	width:10%;
+	margin-right:10px;
+	margin-bottom:15px;
+	padding:5px;
+	box-sizing:border-box;
+}
+
+#backToChatBtn:focus {
+	outline:0;
+}
+
+.chat-select-coin-box {
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+}
+
+.chat-coin-num-btns {
+	border:1px solid lightgray;
+	background-color:$chat-bg;
+	font-family:$helshitica;
+	font-size:18px;
+	padding:10px;
+	width:60px;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+.chat-coin-num-btns:hover {
+	border:1px solid gold;
+}
+
+.chat-coin-num-btns:focus {
+	outline:0;
+}
+
+.chat-sel-amt-box {
+	align-self:center;
+	margin-left:10px;
+}
+
+#chat-coin-sel-amt {}
+
+#chat-err-msg {
+	display:none;
+	background-color:$primary-red;
+	border-radius:5px;
+	padding:5px;
+	color:white;
+	font-family:$helshitica;
+}
+
+.chat-send-tip-msg {
+	color:$primary-blue;
+}
+
+/** Styles relating to /dashboard only **/
+
+.dash-chatbox-header {
+	display:flex;
+	flex-direction:column;
+	font-family:$helshitica;
+	background-color:$chat-bg;
+	text-align:center;
+	padding:5px;		
+}
+
+#dash-chat-menu-btn {
+	align-self:center;
+	width:20px;
+	height:20px;
+}
+
+#dash-chat-menu-btn:hover {
+	cursor:pointer;
+}
+
+#dash-navbar-text {
+	align-self:center;
+	flex-grow:1;
+}
+
+#dash-chat-dropdown-menu {
+	display:none;
+	flex-direction:column;
+	text-decoration:none;
+	justify-content:flex-start;
+	border-bottom:1px solid lightgray;	
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+#dash-chat-dropdown-menu li {
+	background-color:$chat-bg;
+	padding:5px;
+	align-self:flex-start;
+	list-style:none;
+	text-align:initial;
+	box-sizing:border-box;
+	z-index:1;
+}
+
+#dash-chat-header-name {
+	display:flex;
+	flex-direction:row;
+	font-family:$helshitica;
+	background-color:$chat-bg;
+	border-bottom:1px solid lightgray;
+	text-align:center;
+	padding:10px 10px 20px 10px;
+}
+
+.dash-chat-menu-item {
+	border-bottom:1px solid lightgray;
+	width:100%;
+}
+
+.dash-chat-menu-item:hover {
+	cursor:pointer;
+	color:gray;
+}
+
+#chatbox-users-room-box {
+	display:none;
+	height:100%;
+}
+
+#chatbox-users-ul {
+	margin:0px;
+	padding:5px;
+	font-family:$helshitica;	
+}
+
+.dash-ban-btn {
+	height:15px;
+	width:15px;
+}
+
+.dash-ban-btn:hover {
+	cursor:pointer;
+}
+
+.dash-unban-btn {
+	height:15px;
+	width:15px;
+}
+
+.dash-unban-btn:hover {
+	cursor:pointer;
+}
+
+#dash-banned-box {
+	display:none;
+	height:100%;	
+}
+
+#chatbox-banned-ul {
+	margin:0px;
+	padding:5px;
+	font-family:$helshitica;	
+}

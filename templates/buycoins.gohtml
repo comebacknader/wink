@@ -1,0 +1,49 @@
+{{ template "htmlhead" }}
+{{ template "header" . }}
+
+    <section class="container">
+      <div id="coin-box">   
+        <h1 id="coin-header">Coins</h1>
+        <h3> You have {{.Coins}} Coins </h3>         
+        <table>
+          <tbody>
+            <tr>
+              <td class="coin-price-amt">100</td>
+              <td><img src="/assets/img/coin.svg" class="coin-price-icon" /></td>
+              <td class="coin-price-price">$10.99</td>
+            </tr>
+            <tr>
+              <td class="coin-price-amt">200</td>
+              <td><img src="/assets/img/coin.svg" class="coin-price-icon" /></td>
+              <td class="coin-price-price">$20.99</td>
+            </tr>
+            <tr>
+              <td class="coin-price-amt">500</td>
+              <td><img src="/assets/img/coin.svg" class="coin-price-icon" /></td>
+              <td class="coin-price-price">$44.99</td>
+            </tr>
+            <tr>
+              <td class="coin-price-amt">750</td>
+              <td><img src="/assets/img/coin.svg" class="coin-price-icon" /></td>
+              <td class="coin-price-price">$62.99</td>
+            </tr>
+            <tr>
+              <td class="coin-price-amt">1000</td>
+              <td><img src="/assets/img/coin.svg" class="coin-price-icon" /></td>
+              <td class="coin-price-price">$79.99</td>
+            </tr>                                                                  
+          </tbody>
+        </table>
+        <p class="coin-price-info">
+        Coins cannot be purchased at this time.   
+        </p> 
+        <form action="/" method="GET" id="coin-buy-form">
+          <button type="submit" class="form-btn" id="coin-buy-btn">
+            BUY WITH CREDIT CARD
+          </button>
+        </form>               
+      </div>                                      
+    </section>
+{{ template "footer" }}    
+{{ template "inlinescripts" }}
+{{ template "htmlend" }}

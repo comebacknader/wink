@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  webapp:
+    build:
+      context: .
+    image: comebacknader/winkgg:latest
+    container_name: wink-container-name
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - wink-net
+    volumes:
+      - .:/go/src/github.com/comebacknader/wink
+  db:
+    build:
+      context: ./wink-psql
+    image: comebacknader/wink-psql:latest
+    container_name: wink-db-container
+    networks:
+      - wink-net
+    volumes:
+      - wink-psql:/var/lib/postgresql/data
+
+networks:
+  wink-net:
+
+volumes:
+  wink-psql:

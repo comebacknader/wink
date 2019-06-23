@@ -1,0 +1,224 @@
+
+/** Styles for the Splash Page url: '/' **/
+
+.home-container {
+  display:flex;
+  flex-direction:row;
+}
+
+#splash_header {
+  background-image: url("../img/gamer.jpg");
+  background-color:$primary-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height:95vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  overflow-x: hidden;
+}
+
+/* Wink Image */
+#splash_logo_img {
+  display:block;
+  width:250px;
+  height:250px;
+}
+
+/* Adult Video Game Streaming */
+#splash_logo_tagline {
+  font-family:'Permanent Marker', cursive;
+  color:#b32400;
+  font-size:30px;
+  margin:0;
+}
+
+/** Styles for the Splash Page url: '/' **/
+.splash_background {
+  height: 100vh;
+  background-color: #0e9dd9;
+  background-image: url("../img/splash_page_01.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+@media (min-width:600px) {
+
+#splash_logo_text {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 70px;
+  text-align: center; 
+  margin:0;
+}
+
+}
+
+@media (max-width:600px) {
+
+#splash_logo_text {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 50px;
+  text-align: center; 
+  margin:0;
+}
+
+}
+
+#splash_logo_tagline {
+  font-family: 'Permanent Marker', cursive;
+  color: #b32400;
+  text-align: center;
+  font-size: 30px; 
+}
+
+/** Home.html Page Styles **/
+
+#home-container {
+  background-image: url("../img/splash_page_01.jpg");
+  background-color:$primary-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height:95vh;
+  display:flex;
+  flex-direction:column;
+}
+
+
+@media (max-width:800px) {
+
+.home-videocontent {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  z-index:1;
+}
+
+.home-video-screen {
+  width:100%;
+}
+
+.home-vid-info {
+  padding:20px;
+  background: rgb(188, 188, 188); /* Fallback for older browsers without RGBA-support */
+  background: rgba(100, 100, 100, 0.5);  
+}
+
+#home-eye-open-icon {
+  display:none;
+}
+
+}
+
+@media (min-width:800px) {
+
+.home-videocontent {
+  display:flex;
+  flex-direction:row;
+  width:100%; 
+  align-self:center;
+  justify-content:center;
+  z-index:1;
+  margin-top:20px;
+  margin-bottom:10px;
+  // border:4px solid red; 
+  box-sizing:border-box; 
+}
+
+.home-video-screen {
+  align-self:flex-start;
+  width:700px;
+  box-sizing:border-box;
+}
+
+.home-vid-info {
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  box-sizing:border-box;
+  height:395px;
+  align-self:flex-start;
+  background: rgb(188, 188, 188); /* Fallback for older browsers without RGBA-support */
+  background: rgba(100, 100, 100, 0.5);  
+}
+
+
+}
+
+
+.home-brand-box {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  align-self:center;
+}
+
+
+
+#home-stream-title {
+  font-size: 24px;
+  margin:5px;
+  color:white;
+  font-family:$helshitica;
+}
+
+#home-stream-author {
+  color:white;
+  margin:5px;
+  font-size:18px;
+  font-family:$helshitica;
+  font-style: italic; 
+}
+
+#home-view-stream-btn-box {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#home-view-stream-btn {
+  margin-top:10px;
+  margin-bottom:10px;
+  box-sizing:border-box;
+  width:100%;
+  align-self:center;
+}
+
+#home-view-stream-btn:hover {
+  cursor:pointer;
+}
+
+#home-view-stream-btn:focus {
+  outline:0;
+}
+
+#home-become-btn {
+  border: 1px solid $primary-blue;
+  background-color:transparent;
+  padding:15px;
+  border-radius:5px;
+  font-size:16px;
+  white-space: normal;
+  transition: background-color 0.5s ease;
+}
+
+#home-become-btn:hover {
+  background-color:$primary-blue;
+}
+
+#home-become-info {
+  display:none;
+  color:white;
+  font-family:"Helvetica";
+  font-size:18px;
+  text-align:center;
+}
+

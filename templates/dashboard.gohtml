@@ -1,0 +1,148 @@
+{{ template "streamhtmlhead" }}
+{{ template "header" . }}
+  <section class="streaming-container">
+    <div class="video-col" id="video-column">
+      <div class="videocontent">
+        <video class="video-js vjs-big-play-centered vjs-16-9" id="video-player" controls preload="none" poster="/assets/img/off_stream.png" data-setup='{"techorder" : ["flash", "html5"]}'>
+          <source src="rtmp://winkgg.com/live/{{.CurrStrmr}}" type="rtmp/mp4">            
+          <source src="https://winkgg.com/hls/{{.CurrStrmr}}.m3u8" 
+          type="application/x-mpegURL">
+        </video>
+      </div>
+      <div id="streaming-vid-info">
+        <div id="dash-stream-info">
+          <p class="dash-stream-title" id="dash-stream-title">{{ .Stream.Title }}</p>
+          <p class="dash-stream-playing"> 
+          <span id="get-curr-streamer">{{ .CurrStrmr }}</span> 
+            <em>playing</em> <span id="dash-stream-game">{{ .Stream.Game }}</span>
+          </p>
+          <div id="dash-stream-links">
+            <div id="twitter-present">
+              <img src="/assets/img/twit_logo.svg" class="dash-twit-logo"/> 
+                <span id="dash-stream-twitter">{{.Stream.Twit}}</span>
+            </div>
+            <div id="siteone-present">
+              <img src="/assets/img/siteone.svg" class="dash-siteone-logo" /> 
+              <span id="dash-stream-siteone">{{.Stream.SiteOne}}</span>
+            </div>
+          </div>
+          <button id="dash-edit-strm-btn" 
+            class="form-btn"> 
+            Edit 
+          </button>
+        </div>
+        <div id="dash-edit-stream-info">
+          <form id="dash-update-stream-form"> 
+            <div id="dash-stream-errors">
+            </div>
+            <input type="text" class="form-input" 
+              aria-describedby="streamTitle" placeholder="Enter Title of Stream" 
+              value={{.Stream.Title}} id="dash-edit-stream-title" name="streamTitle">
+            <input type="text" class="form-input" 
+              aria-describedby="gameTitle" placeholder="Enter Game Title" 
+              value={{.Stream.Game}} id="dash-edit-stream-game" name="game">
+            {{if .Stream.Twit }}
+            <input type="text" class="form-input" 
+              aria-describedby="twitterLink" placeholder="Enter Twitter" 
+              value={{.Stream.Twit}} id="dash-edit-stream-twitter" name="twitter">
+            {{ else }}
+            <input type="text" class="form-input" 
+              aria-describedby="twitterLink" placeholder="Enter Twitter" 
+              id="dash-edit-stream-twitter" name="twitter">
+            {{ end }}                          
+            {{if .Stream.SiteOne }}                        
+            <input type="text" class="form-input" 
+              aria-describedby="personalSite" placeholder="Enter Personal Website" 
+              value={{.Stream.SiteOne}} id="dash-edit-stream-siteone" name="siteone">
+            {{ else }}
+            <input type="text" class="form-input" 
+              aria-describedby="personalSite" placeholder="Enter Personal Website" 
+              id="dash-edit-stream-siteone" name="siteone">
+            {{ end }}                                                           
+            <button type="submit" class="form-btn" id="dash-update-strm-btn">Update</button>
+            <button type="button" class="form-btn-secondary" id="dash-cancel-edit">Cancel
+            </button>
+          </form>                 
+        </div>
+        <div id="streaming-stream-info-right">
+          <div id="streaming-online-status">      
+            {{ if .Stream.Online }}
+              <div class="dash-online-circ" id="dash-status-circ"></div>
+              <span class="align-middle" id="dash-online-status">Online</span>
+            {{ else }}
+              <div class="dash-offline-circ" id="dash-status-circ"></div>
+              <span id="dash-online-status">Offline</span>
+            {{ end }}
+          </div>
+          <form id="dash-online-form">
+            {{ if .Stream.Online }}
+              <input type="hidden" id="dash-input-online" name="online" value="offline"><button type="submit" id="dash-change-status-btn" class="btn-outline-red">Go Offline</button>
+            {{ else }}
+              <input type="hidden" id="dash-input-online" name="online" value="online">
+              <button type="submit" id="dash-change-status-btn" class="form-outline-green">
+                Go Online
+              </button>
+            {{ end }}
+          </form>
+          <div id="dash-total-coin-box">
+            <img src="/assets/img/coin.svg" id="dash-total-coin-img">
+            <span id="dash-total-coin-amt"> {{.TotCoins}} </span>
+          </div>
+        </div>
+        <button type="button" id="viewChatBtn" class="form-btn">
+        View Chat 
+        </button>                      
+      </div>
+    </div>         
+    <div class="chatbox" id="chatbox">
+      <nav class="dash-chatbox-header">
+        <div id="dash-chat-header-name">
+          <img src="/assets/img/menu.svg" id="dash-chat-menu-btn">
+          <span id="dash-navbar-text">
+            <span id="chat-curr-streamer">{{.CurrStrmr}}</span>'s Chatroom
+          </span>
+        </div>
+        <div>
+          <ul id="dash-chat-dropdown-menu">
+            <li class="dash-chat-menu-item" id="dash-chatroom-item">Chatroom</li>
+            <li class="dash-chat-menu-item" id="dash-chat-users-item">Users In Room</li>
+            <li class="dash-chat-menu-item" id="dash-chat-banned-item">Banned Users</li>
+          </ul>
+        </div>            
+      </nav>
+      <div class="chatbox-msg-box">
+        <ul id="chatbox-ul">
+        </ul>          
+      </div>
+      <div id="chatbox-users-room-box">
+        <ul id="chatbox-users-ul">
+        </ul>
+      </div> 
+      <div id="dash-banned-box">
+        <ul id="chatbox-banned-ul">
+        </ul>
+      </div>       
+      <div class="chatbox-form-box">
+        <div id="chatbox-send-chat-box">
+          <form id="chatbox-send-coin-form">
+            <input type="hidden" id="streaming-sender-input" value={{.CurrUser}} name="sender" />
+            <textarea id="chatbox-msg-textarea" class="form-input" rows="3" name="msg" 
+              aria-describedby="message" placeholder="Say something..."></textarea>             
+            <div id="dash-chat-btn-box">
+              <button type="button" id="viewVidBtn" class="form-btn">
+                 View Video
+              </button>                        
+              <button type="button" id="sendMsgBtn" class="form-btn">Chat</button>
+            </div>                                       
+          </form>            
+        </div>
+      </div>
+    </div>       
+  </section>
+  {{ template "footer" }}    
+  {{ template "inlinescripts" }}
+  <script src="https://vjs.zencdn.net/6.2.0/video.min.js"></script>
+  <script src="/assets/js/videojs-contrib-hls.min.js"></script>
+  <script src="/assets/js/videojs-flash.min.js"></script>                                      
+  <script src="/assets/js/dashboard.js"></script>
+{{ template "htmlend" }}

@@ -1,0 +1,46 @@
+{{ template "streamhtmlhead" }}
+{{ template "header" . }}
+<section id="home-container">
+  <div class="home-videocontent">
+    <div class="home-video-screen">
+        <video class="video-js vjs-big-play-centered vjs-16-9" id="video-player" controls preload="none" poster="/assets/img/off_stream.png" data-setup='{}'>
+          <source src="https://winkgg.com/hls/{{.CurrStrmr}}.m3u8" 
+          type="application/x-mpegURL">
+        </video>
+    </div>            
+    <div class="home-vid-info">
+      <div id="home-vid-tit-author">
+        <p id="home-stream-title">{{ .Stream.Title }}</p>
+        <p id="home-stream-author"> {{ .CurrStrmr }} playing {{ .Stream.Game }} </p>
+      </div>
+      <div id="home-view-stream-btn-box">
+        <a href="/streaming/{{.CurrStrmr}}">
+          <button type="button" class="form-btn" id="home-view-stream-btn"> 
+            View Stream 
+            </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="home-brand-box">
+    <div id="home-eye-open-icon">
+     {{ template "eye-open-icon" }}  
+    </div>
+    <div id="home-tagline-box">     
+      <h3 id="splash_logo_tagline" class="text-center">
+        Video Game Streaming
+      </h3>
+      <button id="home-become-btn" class="form-btn">
+        Become a Streamer
+      </button>
+      <p id="home-become-info">To become a streamer, email us at <strong>admin@wink.gg</strong> for more information.</p>
+    </div>
+  </div>
+</section>
+
+{{ template "footer" }}
+<script src="https://vjs.zencdn.net/6.2.0/video.min.js"></script>
+<script src="/assets/js/videojs-contrib-hls.min.js"></script>            
+{{ template "inlinescripts" }}
+<script src="/assets/js/home.js"></script>   
+{{ template "htmlend"}}

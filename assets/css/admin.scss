@@ -1,0 +1,44 @@
+#frontpage-box {
+	display:flex;
+	flex-direction:column;
+	align-items:stretch;
+	font-family:$helshitica;
+	width:100%;
+	box-sizing:border-box;
+	padding:10px;
+}
+
+#frontpage-list {
+	padding:0px;
+}
+
+#frontpage-list li {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	list-style:none;
+	box-sizing:border-box;
+	padding:5px;
+	width:100%;
+	border:1px solid lightgray;
+}
+
+.frontpage-form {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+#frontpage-input {
+	width:50%;
+}
+
+#frontpage-select {
+	width:50%;
+	margin-left:10px;
+}
+
+#frontpage-btn {
+	width:50%;
+	margin-left:20px;
+}

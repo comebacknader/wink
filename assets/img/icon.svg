@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+	width="500px" 
+	height="500px" 
+	viewBox="0 0 1000 1000"
+	>
+	<!-- First Row --> 
+	<rect x="300" y="100" width="52" height="52" fill="yellow" stroke="yellow" />	
+	<rect x="350" y="100" width="52" height="52" fill="yellow" stroke="yellow" />
+	<rect x="400" y="100" width="52" height="52" fill="yellow" stroke="yellow" /> 		
+	<rect x="450" y="100" width="52" height="52" fill="yellow" stroke="yellow" />		
+	<rect x="500" y="100" width="52" height="52" fill="yellow" stroke="yellow" />		
+	<rect x="550" y="100" width="52" height="52" fill="yellow" stroke="yellow" />		
+
+	<!-- Second Row -->
+	<rect x="200" y="150" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="150" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="150" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="150" width="52" height="52" fill="yellow" />
+	<rect x="400" y="150" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="150" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="150" width="52" height="52" fill="yellow" />		
+	<rect x="550" y="150" width="52" height="52" fill="yellow" />
+	<rect x="600" y="150" width="52" height="52" fill="yellow" />		
+	<rect x="650" y="150" width="52" height="52" fill="yellow" />
+
+	<!-- Third Row --> 
+	<rect x="150" y="200" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="200" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="200" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="200" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="200" width="52" height="52" fill="yellow" />
+	<rect x="400" y="200" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="200" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="200" width="52" height="52" fill="yellow" />		
+	<rect x="550" y="200" width="52" height="52" fill="yellow" />
+	<rect x="600" y="200" width="52" height="52" fill="yellow" />		
+	<rect x="650" y="200" width="52" height="52" fill="yellow" />
+	<rect x="700" y="200" width="52" height="52" fill="yellow" />			
+
+	<!-- Fourth Row --> 
+	<rect x="100" y="250" width="52" height="52" fill="yellow" />	
+	<rect x="150" y="250" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="250" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="250" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="250" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="250" width="52" height="52" fill="yellow" />
+	<rect x="400" y="250" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="250" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="250" width="52" height="52" fill="yellow" />		
+	<rect x="550" y="250" width="52" height="52" fill="white" />
+	<rect x="600" y="250" width="52" height="52" fill="white" />		
+	<rect x="650" y="250" width="52" height="52" fill="white" />
+	<rect x="700" y="250" width="52" height="52" fill="yellow" />	
+	<rect x="750" y="250" width="52" height="52" fill="yellow" />	
+
+	<!-- Fifth Row --> 
+	<rect x="100" y="300" width="52" height="52" fill="yellow" />	
+	<rect x="150" y="300" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="300" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="300" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="300" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="300" width="52" height="52" fill="yellow" />
+	<rect x="400" y="300" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="300" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="300" width="52" height="52" fill="white" />		
+	<rect x="550" y="300" width="52" height="52" fill="white" />
+	<rect x="600" y="300" width="52" height="52" fill="black" />		
+	<rect x="650" y="300" width="52" height="52" fill="white" />
+	<rect x="700" y="300" width="52" height="52" fill="white" />	
+	<rect x="750" y="300" width="52" height="52" fill="yellow" />	
+
+	<!-- Sixth Row -->
+	<rect x="50"  y="350" width="52" height="52" fill="yellow" />	
+	<rect x="100" y="350" width="52" height="52" fill="yellow" />	
+	<rect x="150" y="350" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="350" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="350" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="350" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="350" width="52" height="52" fill="yellow" />
+	<rect x="400" y="350" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="350" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="350" width="52" height="52" fill="white" />		
+	<rect x="550" y="350" width="52" height="52" fill="black" />
+	<rect x="600" y="350" width="52" height="52" fill="black" />		
+	<rect x="650" y="350" width="52" height="52" fill="black" />
+	<rect x="700" y="350" width="52" height="52" fill="white" />	
+	<rect x="750" y="350" width="52" height="52" fill="yellow" />	
+	<rect x="800" y="350" width="52" height="52" fill="yellow" />	
+
+	<!-- Seventh Row --> 
+	<rect x="50" y="400" width="52" height="52" fill="yellow" />	
+	<rect x="100" y="400" width="52" height="52" fill="yellow" />	
+	<rect x="150" y="400" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="400" width="52" height="52" fill="black" />	
+	<rect x="250" y="400" width="52" height="52" fill="black" />	
+	<rect x="300" y="400" width="52" height="52" fill="black" />	
+	<rect x="350" y="400" width="52" height="52" fill="yellow" />
+	<rect x="400" y="400" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="400" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="400" width="52" height="52" fill="white" />		
+	<rect x="550" y="400" width="52" height="52" fill="white" />
+	<rect x="600" y="400" width="52" height="52" fill="black" />		
+	<rect x="650" y="400" width="52" height="52" fill="white" />
+	<rect x="700" y="400" width="52" height="52" fill="white" />	
+	<rect x="750" y="400" width="52" height="52" fill="yellow" />	
+	<rect x="800" y="400" width="52" height="52" fill="yellow" />	
+
+	<!-- Eighth Row --> 
+	<rect x="50" y="450" width="52" height="52" fill="yellow" />	
+	<rect x="100" y="450" width="52" height="52" fill="yellow" />	
+	<rect x="150" y="450" width="52" height="52" fill="black" />		
+	<rect x="200" y="450" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="450" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="450" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="450" width="52" height="52" fill="black" />
+	<rect x="400" y="450" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="450" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="450" width="52" height="52" fill="yellow" />		
+	<rect x="550" y="450" width="52" height="52" fill="white" />
+	<rect x="600" y="450" width="52" height="52" fill="white" />		
+	<rect x="650" y="450" width="52" height="52" fill="white" />
+	<rect x="700" y="450" width="52" height="52" fill="yellow" />	
+	<rect x="750" y="450" width="52" height="52" fill="yellow" />	
+	<rect x="800" y="450" width="52" height="52" fill="yellow" />
+
+	<!-- Ninth Row --> 
+	<rect x="50" y="500" width="52" height="52" fill="yellow" />	
+	<rect x="100" y="500" width="52" height="52" fill="yellow" />	
+	<rect x="150" y="500" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="500" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="500" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="500" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="500" width="52" height="52" fill="yellow" />
+	<rect x="400" y="500" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="500" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="500" width="52" height="52" fill="yellow" />		
+	<rect x="550" y="500" width="52" height="52" fill="yellow" />
+	<rect x="600" y="500" width="52" height="52" fill="yellow" />		
+	<rect x="650" y="500" width="52" height="52" fill="yellow" />
+	<rect x="700" y="500" width="52" height="52" fill="yellow" />	
+	<rect x="750" y="500" width="52" height="52" fill="yellow" />	
+	<rect x="800" y="500" width="52" height="52" fill="yellow" />
+
+	<!-- Tenth Row --> 
+	<rect x="50" y="550" width="52" height="52" fill="yellow" />	
+	<rect x="100" y="550" width="52" height="52" fill="yellow" />	
+	<rect x="150" y="550" width="52" height="52" fill="black" />		
+	<rect x="200" y="550" width="52" height="52" fill="black" />	
+	<rect x="250" y="550" width="52" height="52" fill="black" />	
+	<rect x="300" y="550" width="52" height="52" fill="black" />	
+	<rect x="350" y="550" width="52" height="52" fill="black" />
+	<rect x="400" y="550" width="52" height="52" fill="black" />		
+	<rect x="450" y="550" width="52" height="52" fill="black" />		
+	<rect x="500" y="550" width="52" height="52" fill="black" />		
+	<rect x="550" y="550" width="52" height="52" fill="black" />
+	<rect x="600" y="550" width="52" height="52" fill="black" />		
+	<rect x="650" y="550" width="52" height="52" fill="black" />
+	<rect x="700" y="550" width="52" height="52" fill="black" />	
+	<rect x="750" y="550" width="52" height="52" fill="yellow" />	
+	<rect x="800" y="550" width="52" height="52" fill="yellow" />
+
+	<!-- Eleventh Row --> 
+	<rect x="100" y="600" width="52" height="52" fill="yellow"  />	
+	<rect x="150" y="600" width="52" height="52" fill="yellow"  />		
+	<rect x="200" y="600" width="52" height="52" fill="black"  />	
+	<rect x="250" y="600" width="52" height="52" fill="black"  />	
+	<rect x="300" y="600" width="52" height="52" fill="black"  />	
+	<rect x="350" y="600" width="52" height="52" fill="black"  />
+	<rect x="400" y="600" width="52" height="52" fill="black"  />		
+	<rect x="450" y="600" width="52" height="52" fill="black"  />		
+	<rect x="500" y="600" width="52" height="52" fill="black"  />		
+	<rect x="550" y="600" width="52" height="52" fill="black"  />
+	<rect x="600" y="600" width="52" height="52" fill="black"  />		
+	<rect x="650" y="600" width="52" height="52" fill="black"  />
+	<rect x="700" y="600" width="52" height="52" fill="yellow"  />	
+	<rect x="750" y="600" width="52" height="52" fill="yellow"  />	
+
+	<!-- Twelfth Row --> 
+	<rect x="100" y="650" width="52" height="52" fill="yellow" />		
+	<rect x="150" y="650" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="650" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="650" width="52" height="52" fill="black" />	
+	<rect x="300" y="650" width="52" height="52" fill="black" />	
+	<rect x="350" y="650" width="52" height="52" fill="black" />
+	<rect x="400" y="650" width="52" height="52" fill="black" />		
+	<rect x="450" y="650" width="52" height="52" fill="black" />		
+	<rect x="500" y="650" width="52" height="52" fill="black" />		
+	<rect x="550" y="650" width="52" height="52" fill="black" />
+	<rect x="600" y="650" width="52" height="52" fill="black" />		
+	<rect x="650" y="650" width="52" height="52" fill="yellow" />
+	<rect x="700" y="650" width="52" height="52" fill="yellow" />	
+	<rect x="750" y="650" width="52" height="52" fill="yellow" />	
+
+	<!-- Thirteenth Row --> 
+	<rect x="150" y="700" width="52" height="52" fill="yellow" />		
+	<rect x="200" y="700" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="700" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="700" width="52" height="52" fill="black" />	
+	<rect x="350" y="700" width="52" height="52" fill="black" />
+	<rect x="400" y="700" width="52" height="52" fill="black" />		
+	<rect x="450" y="700" width="52" height="52" fill="black" />		
+	<rect x="500" y="700" width="52" height="52" fill="black" />		
+	<rect x="550" y="700" width="52" height="52" fill="black" />
+	<rect x="600" y="700" width="52" height="52" fill="yellow" />		
+	<rect x="650" y="700" width="52" height="52" fill="yellow" />
+	<rect x="700" y="700" width="52" height="52" fill="yellow" />	
+
+	<!-- Fourteenth Row --> 
+	<rect x="200" y="750" width="52" height="52" fill="yellow" />	
+	<rect x="250" y="750" width="52" height="52" fill="yellow" />	
+	<rect x="300" y="750" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="750" width="52" height="52" fill="yellow" />
+	<rect x="400" y="750" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="750" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="750" width="52" height="52" fill="yellow" />		
+	<rect x="550" y="750" width="52" height="52" fill="yellow" />
+	<rect x="600" y="750" width="52" height="52" fill="yellow" />		
+	<rect x="650" y="750" width="52" height="52" fill="yellow" />
+
+	<!-- Final Row --> 
+	<rect x="300" y="800" width="52" height="52" fill="yellow" />	
+	<rect x="350" y="800" width="52" height="52" fill="yellow" />
+	<rect x="400" y="800" width="52" height="52" fill="yellow" />		
+	<rect x="450" y="800" width="52" height="52" fill="yellow" />		
+	<rect x="500" y="800" width="52" height="52" fill="yellow" />		
+	<rect x="550" y="800" width="52" height="52" fill="yellow" />
+
+</svg>

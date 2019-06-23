@@ -1,0 +1,10 @@
+/node_modules
+.DS_Store
+runner.conf
+/tmp
+buildwink
+winkbinary
+npm-debug.log
+*.pem
+*.csr
+*.key
