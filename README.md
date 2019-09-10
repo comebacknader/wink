@@ -1,4 +1,3 @@
-![Wink Screenshot](https://raw.githubusercontent.com/comebacknader/wink/master/assets/img/screenshot-1.png)
 # WINK.gg
 
 Wink is a video game streaming website similar to Twitch built with Golang and VanillaJS.
