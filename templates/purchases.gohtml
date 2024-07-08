@@ -1,0 +1,20 @@
+{{ template "htmlhead" }}
+{{ template "header" . }}
+
+  <section class="container">
+    <div id="users-all-box">       
+      <h2>All Purchases</h2>                        
+      <ul id="users-all-list">
+        {{ range .Purchases }}
+          <li>
+           <p>{{ .Username }} bought {{ .Typ }} on {{ .Bought }} </p>
+           <span class="users-all-badge">{{.Price}}</span>
+           </li>
+        {{ end }}
+      </ul>
+    </div>            
+  </section>
+
+{{ template "footer" }}
+{{ template "inlinescripts" }}
+{{ template "htmlend" }}

@@ -1,0 +1,31 @@
+{{ template "htmlhead" }}
+{{ template "header" . }}
+
+    <section id="signup_header">
+      <img src="/assets/img/icon.svg" id="signup-logo-img" class="" />    
+      <h3 class="auth-page-tagline">Join Wink today.</h3>
+      {{ if .Error }}
+      <div class="auth-errors">
+        <ul>
+          {{range .Error}}
+            <li>{{.}}</li>
+          {{end}}
+        </ul>
+      </div>
+      {{end}}
+      <div class="auth-box">
+        <form method="post" action="/signup" id="">
+          <input label="Username" placeholder="Username" name="username" 
+            type="text" class="form-input" />
+          <input label="Email" placeholder="Email" name="email" 
+            type="text" class="form-input" />
+          <input label="Password" placeholder="Password" name="password"
+             type="password" class="form-input" />
+          <button type="submit" class="form-btn">Sign up</button>
+        </form>
+      </div>   
+    </section>
+
+{{ template "footer" }}
+<script src="/assets/js/header.js"></script>
+{{ template "htmlend" }}

@@ -1,0 +1,22 @@
+.footer-container {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	padding-top:10px;
+	box-sizing:border-box;
+	align-items:center;	
+	border-top:1px solid #dedede;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer-text {
+	font-size:10px;
+}
+
+#footer-compliance-link:hover {
+	cursor:pointer;
+}
+
+#complianceModal {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}

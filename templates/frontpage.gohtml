@@ -1,0 +1,40 @@
+{{ template "htmlhead" }}
+{{ template "header" . }}
+
+  <section class="container"> 
+    <div id="frontpage-box">       
+      <h2>Select Frontpage Streamer</h2>
+      {{ if .Success }}
+      <div class="form-success">
+        <p>{{.Success}}</p>
+      </div>
+      {{ end }}
+      {{ if .Error }}
+      <div class="form-error">
+        <p>{{.Error}}</p>
+      </div>
+      {{ end }} 
+      <ul id="frontpage-list">
+        {{ range .Users }}
+          <li>
+           {{ .Username }} 
+           </li>
+        {{ end }}
+      </ul>                                    
+      <form method="post" action="/frontpage">            
+        <div class="frontpage-form">
+          <input type="text" class="form-input" id="frontpage-input" name="streamer" 
+            aria-describedby="streamer" placeholder="Enter streamer name">                
+          <select class="form-input" name="addremove" id="frontpage-select">
+            <option>add</option>
+            <option>remove</option>
+          </select>                  
+          <button type="submit" class="form-btn" id="frontpage-btn">Select</button>           
+        </div>
+      </form>
+    </div> 
+  </section>
+
+{{ template "footer" }}
+{{ template "inlinescripts" }}
+{{ template "htmlend" }}

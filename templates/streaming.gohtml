@@ -1,0 +1,112 @@
+{{ template "streamhtmlhead" }}
+{{ template "header" . }}
+  <section class="streaming-container">
+    <div class="video-col">
+      <div class="videocontent">
+        <video class="video-js vjs-big-play-centered vjs-default-skin vjs-16-9" id="video-player" controls preload="none" poster="/assets/img/off_stream.png" data-setup='{"techorder" : ["flash", "html5"]}'>
+          <source src="rtmp://winkgg.com/live/{{.CurrStrmr}}" type="rtmp/mp4">  
+          <source src="https://winkgg.com/hls/{{.CurrStrmr}}.m3u8" 
+          type="application/x-mpegURL">                 
+        </video>
+      </div>
+      <div id="streaming-vid-info">
+        <div id="dash-stream-info">
+          <p class="dash-stream-title" id="dash-stream-title">{{ .Stream.Title }}</p>
+          <p class="dash-stream-playing"> {{ .CurrStrmr }} 
+            <em>playing</em> <span id="dash-stream-game">{{ .Stream.Game }}</span>
+          </p>
+          <div id="dash-stream-links">          
+            <div id="twitter-present">
+              <img src="/assets/img/twit_logo.svg" class="dash-twit-logo"/> 
+                <span id="dash-stream-twitter">{{.Stream.Twit}}</span>
+            </div>
+            <div class="" id="siteone-present">
+              <img src="/assets/img/siteone.svg" class="dash-siteone-logo" /> 
+                <span id="dash-stream-siteone">{{.Stream.SiteOne}}</span>
+            </div>
+          </div>
+        </div>
+        <div id="streaming-stream-info-right">
+          <div id="streaming-online-status">
+            {{ if .Stream.Online}}
+              <div class="dash-online-circ" id="dash-status-circ"></div>
+              <span class="align-middle" id="dash-online-status">Online</span>
+            {{ else }}
+              <div class="dash-offline-circ" id="dash-status-circ"></div>
+              <span class="align-middle" id="dash-online-status">Offline</span>
+            {{ end }}
+          </div>
+        </div>
+      </div>         
+    </div>
+    <div class="chatbox">
+      <nav class="chatbox-header">
+        <span class="navbar-text">{{.CurrStrmr}}'s Chatroom</span> 
+      </nav>
+      <div class="chatbox-msg-box">
+        <ul id="chatbox-ul">
+        </ul>
+      </div>
+      <div class="chatbox-form-box">
+        <div id="chatbox-send-chat-box">
+          <form id="chatbox-send-coin-form">
+            <input type="hidden" id="streaming-sender-input" value={{.CurrUser}} name="sender" />
+            <textarea id="chatbox-msg-textarea" class="form-input" rows="3" name="msg" 
+              aria-describedby="message" placeholder="Say something..."></textarea>
+            <div id="chatbox-banned-msg">
+              <p> Sorry, you are currently banned. </p>
+            </div>              
+            <div id="chat-send-coin-btns-box">
+              <button type="button" id="sendCoinBtn" class="chat-send-coin-btn">
+                <span class="chat-send-coin-btn-span">
+                  <img src="/assets/img/coin.svg" class="chat-send-coin-img" id="sendCoinImg" />
+                  <span> Send </span>
+                </span>
+              </button>            
+              <button type="button" id="sendMsgBtn" class="form-btn">Chat</button>
+            </div>                                       
+          </form>            
+        </div>
+        <div id="chatbox-send-coins-box">
+          <div id="chat-err-msg">Problem sending coins.</div>
+          <form id="streaming-send-tip-form">
+            <input type="hidden" id="streaming-sender-input" 
+              value={{.CurrUser}} name="sender" />
+            <input type="hidden" id="streaming-receiver-input" 
+              value={{.CurrStrmr}} name="receiver" />              
+            <div class="chat-select-coin-box">
+              <button type="button" id="backToChatBtn" class="form-btn-outline">
+                <img src="/assets/img/back-arrow.svg" class="chat-send-coin-img" id="sendCoinImg" />                
+              </button>            
+              <button type="button" id="coin-one-btn" class="chat-coin-num-btns">+1</button>
+              <button type="button" id="coin-five-btn" class="chat-coin-num-btns">+5</button>
+              <button type="button" id="coin-ten-btn" class="chat-coin-num-btns">+10</button>
+              <button type="button" id="coin-fitty-btn" class="chat-coin-num-btns">+50</button>
+              <button type="button" id="coin-hundo-btn" class="chat-coin-num-btns">+100
+              </button>              
+            </div>
+            <div class="chat-send-tip-btn-box">
+              <div class="chat-sel-amt-box">
+                <span id="chat-coin-sel-amt" class="chat-coin-sel-amt">0</span> 
+                <span> / </span> 
+                <span id="chat-coin-tot-amt" class="chat-coin-sel-amt">{{ .TotCoins }}</span>
+              </div>               
+              <button type="button" id="sendTipBtn" class="chat-coin-conf-btn">
+                <span class="chat-send-coin-btn-span">
+                  <img src="/assets/img/coin.svg" class="chat-send-coin-img" id="sendCoinImg" />
+                  <span> Send </span>
+                </span>           
+              </button>              
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ template "footer" }}
+  {{ template "inlinescripts" }}
+  <script src="https://vjs.zencdn.net/6.2.0/video.min.js"></script> 
+  <script src="/assets/js/videojs-contrib-hls.min.js"></script> 
+  <script src="/assets/js/videojs-flash.min.js"></script>                        
+  <script src="/assets/js/streaming.js"></script> 
+{{ template "htmlend" }}

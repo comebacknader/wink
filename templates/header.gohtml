@@ -1,0 +1,85 @@
+{{define "header"}}
+<nav class="header-nav">
+  <div class="header-nav-left">
+    <a href="/" class="" id="nav-logo-link">                
+        <img src="/assets/img/icon.svg" id="nav-logo-small" class="" />
+    </a>
+    <a href="/" id="nav-logo-link">  
+      <span id="nav-logo-text">WINK.GG </span>  
+    </a>
+  </div>
+  <div class="header-nav-right">
+    {{ if .UserCred.IsLogIn }}
+      {{ if .UserCred.IsStreamer }}
+        <a href="/dashboard/{{.CurrUser}}" class="header-auth-icons">
+          <img src="/assets/img/stream_icon.svg" class="navbar-logo-icon" /> 
+        </a>
+      {{ end }}
+      {{ if .UserCred.IsAdmin }}
+        <a href="/purchases" class="header-auth-icons">
+          <img src="/assets/img/purchases.svg" class="navbar-logo-icon" />
+        </a>
+        <a href="/frontpage" class="header-auth-icons">
+          <img src="/assets/img/frontpage.svg" class="navbar-logo-icon" />
+        </a>      
+        <a href="/users" class="header-auth-icons">
+          <img src="/assets/img/users.svg" class="navbar-logo-icon" />
+        </a>
+      {{ end }}
+        <a href="/coins" class="header-auth-icons">
+          <img src="/assets/img/coin.svg" class="navbar-logo-icon" /> 
+        </a>
+      <form action="/logout" method="post" id="header-logout-form">
+        <button type="submit" class="header-btn-link" id="">
+          LOG OUT
+        </button>          
+      </form>      
+    {{ else }}   
+      <a class="header-auth-links" id="header-signup-link">
+        SIGN UP
+      </a>
+      <a class="header-auth-links" id="header-login-link">
+        LOG IN
+      </a>               
+    {{ end }}          
+  </div>
+</nav>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close" id="closeSignupModal">&times;</span>         
+      <h5 class="" id="signupModalLabel">Sign up</h5>
+      <div id="signupModalBox">
+        <img src="/assets/img/icon.svg" id="auth-modal-logo-img" class="" />
+        <form method="post" action="/signup" id="signupModalForm">
+          <input label="Username" placeholder="Username" name="username" 
+            type="text" class="form-input" />
+          <input label="Email" placeholder="Email" name="email" 
+            type="text" class="form-input" />
+          <input label="Password" placeholder="Password" name="password"
+             type="password" class="form-input" />
+          <button type="submit" class="form-btn">Sign up</button>
+        </form>
+      </div>      
+    </div>
+  </div>
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" id="closeLoginModal">&times;</span>             
+      <h5 class="" id="loginModalLabel">Log in</h5>
+      <div id="loginModalBox">
+        <img src="/assets/img/icon.svg" id="auth-modal-logo-img" class="mx-auto"/>
+        <form method="post" action="/login" id="loginModalForm">
+            <input label="Username or Email" placeholder="Username/Email" 
+              name="credential" type="text" class="form-input" />
+            <input label="Password" placeholder="Password" name="password"
+               type="password" class="form-input" />
+            <button type="submit" class="form-btn">Log in</button>
+        </form>
+        <a href="/forgot" class="auth-modal-forgot-link">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+{{end}}

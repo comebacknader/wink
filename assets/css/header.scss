@@ -1,0 +1,87 @@
+/** Styles for the Navbar found on most pages */
+
+.navbar-logo-icon {
+  width:25px;
+  height:25px;
+}
+
+#nav-logo-small {
+  height:30px;
+  width:30px;
+}
+
+.header-nav {
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	height:50px;
+	background-color:white;
+	justify-content:space-between;
+	box-sizing:border-box;
+	padding:5px 10px 5px 10px;
+	border-bottom:1px solid lightgray;
+}
+
+.header-nav-left {
+	display:flex;
+}
+
+.header-nav-right {
+	display:flex;
+}
+
+.header-auth-links {
+	align-self:center;
+	text-decoration:none;
+	font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	margin-right:20px;
+	color:$primary-blue;
+}
+
+.header-auth-links:hover {
+	cursor:pointer;
+}
+
+.header-auth-icons {
+	align-self:center;
+	margin-right:20px;
+	margin-top:5px;
+	color:$primary-blue;
+}
+
+.header-auth-icons:hover {
+	cursor:pointer;
+}
+
+#header-logout-form {
+	align-self:center;
+}
+
+.header-btn-link {
+	align-self:center;
+	text-decoration:none;
+	font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color:$primary-blue;
+	border:0px;
+	background-color:transparent;
+	font-size:16px;	
+}
+
+.header-btn-link:hover {
+	cursor:pointer;
+}
+
+#nav-logo-text {
+	align-self:center;
+	font-family: "Press Start 2P";
+	color:$primary-blue;
+	text-decoration: none;
+	margin-left:10px;	
+}
+
+#nav-logo-link {
+	font-family: "Press Start 2P";
+	color:$primary-blue;
+	text-decoration: none;
+	align-self:center;
+}

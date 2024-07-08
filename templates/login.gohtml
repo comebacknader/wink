@@ -1,0 +1,30 @@
+{{ template "htmlhead" }}
+{{ template "header" .}}
+
+    <section id="signup_header">      
+      <img src="assets/img/icon.svg" id="signup-logo-img" class=""></img>
+      <h3 class="auth-page-tagline">Log In</h3> 
+      {{ if .Error }}
+      <div class="auth-errors">
+        <ul>
+          {{range .Error}}
+            <li>{{.}}</li>
+          {{end}}
+        </ul>
+      </div>
+      {{end}}     
+      <div class="auth-box">             
+        <form method="post" action="/login" id="">
+          <input label="Username or Email" placeholder="Username/Email" 
+              name="credential" type="text" class="form-input" />
+          <input label="Password" placeholder="Password" name="password"
+               type="password" class="form-input" />                  
+          <button type="submit" class="form-btn">Log in</button>
+        </form>
+        <a href="/forgot" class="auth-forgot-link">Forgot Password?</a>
+      </div>
+    </section>
+
+{{ template "footer" }}
+{{ template "inlinescripts" }}
+{{ template "htmlend" }}

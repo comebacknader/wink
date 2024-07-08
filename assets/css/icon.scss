@@ -1,0 +1,52 @@
+
+@keyframes whiteToYellow {
+	0% { fill:white }
+	100% { fill:yellow }
+}
+
+@keyframes blackToYellow {
+	0% { fill:black }
+	100% { fill:yellow }
+}
+
+@keyframes whiteToBlack {
+	0% { fill:white }
+	100% { fill:black }
+}
+
+@keyframes yellowToBlack {
+	0% { fill:yellow }
+	100% { fill:black }
+}
+
+.white-to-yellow {
+	animation-name: whiteToYellow;
+	animation-duration: 2s; 
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	 
+}
+
+.black-to-yellow {
+	animation: blackToYellow;
+	animation-duration: 2s; 
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	 	 	
+}
+
+.white-to-black {
+	animation: whiteToBlack;
+	animation-duration: 2s; 
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	 	 	
+}
+
+.yellow-to-black {
+	animation: yellowToBlack;
+	animation-duration: 2s; 
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	 	 
+}

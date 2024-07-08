@@ -1,0 +1,210 @@
+/** General Styles for Signup or Login Routes **/
+
+.auth-page-tagline {
+  font-family:$helshitica;
+  font-size:24px;
+  margin:0;
+}
+
+.auth-errors ul {
+  font-family: $helshitica;
+  padding-left:0px;
+}
+
+.auth-errors ul li {
+  background-color:$primary-red;
+  color:white;
+  padding:10px;
+  list-style-type:none;
+  border-radius:5px;
+}
+
+.auth-success {
+  padding:5px 10px 5px 10px;
+  color:white;
+  box-sizing:border-box;
+  font-family:$helshitica;
+  border-radius:5px;
+  background-color:$success-green;
+}
+
+/** Auth Modals **/
+
+#auth-modal-logo-img {
+  align-self:center;
+  display:block;
+  width:75px;
+  height:75px;
+  margin-bottom:10px;
+}
+
+.auth-forgot-link {
+  font-family:$helshitica;
+  font-size:12px;
+  text-decoration:none;
+  margin-top:10px;
+  color:white;
+}
+
+.auth-modal-forgot-link {
+  font-family:$helshitica;
+  font-size:12px;
+  text-decoration:none;
+  margin-top:10px;
+  color:$primary-blue; 
+}
+
+/** Signup Modal **/
+
+#signupModalBox {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+}
+
+#signupModalLabel {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+}
+
+#signupModalForm {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+}
+
+#signupModalFormLogo {
+  align-self:center;
+}
+
+/** Login Modal **/
+
+#loginModalBox {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+}
+
+#loginModalLabel {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+}
+
+#loginModalForm {
+  display:flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content:space-between;
+  width:100%;
+}
+
+#loginModalFormLogo {
+  align-self:center;
+}
+
+/** 18+ Modal **/
+
+#eighteenModalBox {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+  font-family:$helshitica;
+}
+
+#eighteenModalLabel {
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+}
+
+#eighteenModalForm {
+  display:flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content:space-between;
+  width:100%;
+}
+
+#eighteenModalFormLogo {
+  align-self:center;
+}
+
+/** Route: /signup  */
+
+#signup_header {
+  background-image: url("../img/splash_page_01.jpg");  
+  background-color:$primary-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  overflow-x: hidden;
+  color:white;
+}
+
+#signup_logo_img {
+  display:block;
+  width:150px;
+  height:150px;
+  margin-top:30px;
+  margin-bottom:20px;
+}
+
+#signup-box {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:300px; 
+}
+
+.auth-box {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:300px; 
+}
+
+#signup-logo-img {
+  display:block;
+  width:150px;
+  height:150px;
+  margin-top:30px; 
+}
+
+/** Reset /reset route **/
+
+.go-home-btn {
+  font-family:$helshitica;
+  border: 1px solid $primary-blue;
+  background-color:$primary-blue;
+  padding:10px;
+  border-radius:5px;
+  font-size:16px;
+  color:white;
+  width:300px;
+  box-sizing:border-box;
+  margin-top:10px;
+  white-space: normal;
+  text-align:center;
+  text-decoration:none; 
+  transition: background-color 0.5s ease;
+}
+
+.go-home-btn:hover {
+    background-color:$darker-blue;
+}
+
+/** Route: /users  Page: 'users_all.js'  **/
+
+#users_all_header {
+  height:100vh;
+  display:flex;
+  overflow-x: hidden;
+}

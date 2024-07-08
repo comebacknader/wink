@@ -1,0 +1,47 @@
+{{ template "htmlhead" }}
+{{ template "header" . }}
+
+  <section class="container">
+    <div id="users-all-box">       
+      <h2>All Users</h2>
+      {{ if .Success }}
+      <div class="auth-success">
+        <p>{{.Success}}</p>
+      </div>
+      {{ end }}
+      {{ if .Error }}
+      <div class="auth-errors">
+        <ul>
+          <li>{{.Error}}</li>
+        </ul>
+      </div>
+      {{ end }}                         
+      <ul id="users-all-list">
+        {{ range .Users }}
+          <li>
+           <p>{{ .Username }} </p>
+           <span class="users-all-badge">{{.UserType}}</span>
+           </li>
+        {{ end }}
+      </ul>
+      <div class="users-all-change-box">
+        <h3>Change User Type</h3>
+        <form method="post" action="/updatetype">            
+          <div class="users-all-change-form">
+            <input type="text" class="form-input" name="username" 
+              aria-describedby="username" placeholder="Enter username" id="users-all-change-input">
+            <select class="form-input" name="usertype" id="users-all-change-type">
+              <option>user</option>
+              <option>admin</option>
+              <option>streamer</option>
+            </select>
+            <button type="submit" class="form-btn" id="users-all-change-btn">Update</button>           
+          </div>
+        </form>
+      </div>
+    </div>            
+  </section>
+
+{{ template "footer" }}
+{{ template "inlinescripts" }}
+{{ template "htmlend" }}
